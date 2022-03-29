@@ -2,8 +2,8 @@
 
 export default function HistoryTable() {
     return (
-        <div>
-            Herrow
-        </div>
+        <h1 className="text-3xl font-bold underline">
+        Herrow
+      </h1>
     );
 }

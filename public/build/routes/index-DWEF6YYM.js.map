@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/fransyozef/Documents/projects/pancompany/tinderdex/app/routes/index.tsx?browser", "../../../app/routes/index.tsx", "../../../app/components/historyTable/index.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/fransyozef/Documents/projects/pancompany/tinderdex/app/routes/index.tsx\";", "import { useLoaderData } from \"@remix-run/react\";\nimport { useEffect } from \"react\";\nimport HistoryTable from \"~/components/historyTable\";\n\nexport async function getPokemon(){\n    let res = await fetch(`https://pokeapi.co/api/v2/pokemon/ditto`)\n   return res;\n}\n\nexport let loader = async () => {\n  return getPokemon();\n}\n\nexport default function Index() {\n\n  let pokemon = useLoaderData();\n\n  console.log(pokemon)\n\n  return (\n    <div style={{ fontFamily: \"system-ui, sans-serif\", lineHeight: \"1.4\" }}>\n      <HistoryTable></HistoryTable>\n    </div>\n  );\n}\n", "\n\nexport default function HistoryTable() {\n    return (\n        <div>\n            Herrow\n        </div>\n    );\n}"],
+  "mappings": ";;;;;;;AAAA;;;ACAA;;;ACAA;AAEe,wBAAwB;AACnC,SACI,oCAAC,OAAD,MAAK;AAAA;;;ADSE,iBAAiB;AAE9B,MAAI,UAAU;AAEd,UAAQ,IAAI;AAEZ,SACE,oCAAC,OAAD;AAAA,IAAK,OAAO,EAAE,YAAY,yBAAyB,YAAY;AAAA,KAC7D,oCAAC,cAAD;AAAA;",
+  "names": []
+}
