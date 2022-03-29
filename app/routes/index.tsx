@@ -35,6 +35,7 @@ export default function Index() {
       { !showHistory ?  <Swiper></Swiper> : <HistoryTable></HistoryTable> }
 
       <button onClick={()=> setLiked([...liked, pokemon])}>Store Pokemon</button>
+      
     </div>
   );
 }
