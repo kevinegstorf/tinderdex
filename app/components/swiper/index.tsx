@@ -1,9 +1,8 @@
 import pikachu from './assets/pikachu.jpg';
 
-export default function Tinderdex() {
+export default function Swiper(pokemon: any) {
     return (
         <main>
-            <h1>Tinderdex</h1>
             <img style={{ width: '300px'}} src={pikachu} alt="Profile Picture">
             </img>
             <h1>Pikachu</h1>
