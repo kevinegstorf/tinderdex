@@ -17,6 +17,7 @@ export default function Index() {
 
   let pokemon = useLoaderData();
   const [showHistory, setShowHistory] = useState(false);
+  const [liked, setLiked]: any = useState([])
 
   console.log(pokemon)
 
@@ -26,10 +27,14 @@ export default function Index() {
 
   console.log(showHistory)
 
+  console.log(liked)
+
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <button onClick={()=> toggleHistory()}>{!showHistory ? 'Show History' : 'Show Card'}</button>
       { !showHistory ?  <Swiper></Swiper> : <HistoryTable></HistoryTable> }
+
+      <button onClick={()=> setLiked([...liked, pokemon])}>Store Pokemon</button>
     </div>
   );
 }
