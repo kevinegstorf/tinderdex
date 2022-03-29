@@ -30,8 +30,6 @@ export default function Index() {
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <button onClick={()=> toggleHistory()}>{!showHistory ? 'Show History' : 'Show Card'}</button>
       { !showHistory ?  <Swiper></Swiper> : <HistoryTable></HistoryTable> }
-
-    <div>Test</div>
     </div>
   );
 }
